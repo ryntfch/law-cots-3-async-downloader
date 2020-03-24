@@ -1,0 +1,5 @@
+compress_service/uploads/
+compress_service/compressed/
+.vscode
+**/__pycache__
+**/__pycache__/**
