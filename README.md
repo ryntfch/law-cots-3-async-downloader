@@ -33,16 +33,19 @@ sudo rabbitmq-server
 
 3. Create your local .env
 ```bash
+cp .env.example .env
 cp .env.example frontend/.env
 cp .env.example compress_service/.env
 ```
 
 4. Start Front-end
 ```bash
-cd compress_service; flask run
+cd compress_service; 
+source .env && flask run
 ```
 
 5. Start Compress Service
 ```bash
-cd frontend; flaks run
+cd frontend;
+source .env && flask run
 ```
